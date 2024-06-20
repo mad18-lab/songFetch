@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpInterceptor } from '@angular/common/http';
-import { Observable, catchError, throwError, tap, of, map } from 'rxjs';
+import { Observable, catchError, throwError, tap, of } from 'rxjs';
 import { throttleTime } from 'rxjs';
 
 @Injectable({
