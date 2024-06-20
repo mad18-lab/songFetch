@@ -1,0 +1,11 @@
+<div class="text-white mt-12">
+    <div *ngIf="songDetails" class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-3">
+            <img src={{songDetails.result.header_image_url}} alt="/" class="w-40 h-40 sm:w-56 sm:h-56 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-md"/>
+            <h1>{{songDetails.result.title}}</h1>
+            <p>{{songDetails.result.artist_names}}</p>
+            <div class="mt-3 rounded-lg bg-[#131313] p-8 text-center w-[450px] sm:w-[500px] sm:text-2xl" [innerHTML]="lyrics">
+            </div>
+        </div>
+    </div>
+</div>
