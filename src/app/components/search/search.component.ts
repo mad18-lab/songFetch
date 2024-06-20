@@ -29,7 +29,7 @@ export class SearchComponent {
         this.loading = false;
         this.errorMsg = "Sorry :( your song wasn't found. Please try again.";
       }
-    }, 8000);
+    }, 16000);
 
     this.apiSongs.searchTrack(this.trackName).subscribe({
       next: (data) => {
