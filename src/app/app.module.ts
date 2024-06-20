@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchComponent } from './components/search/search.component';
 import { ResultsComponent } from './components/results/results.component';
+import { SkeletonComponent } from './components/skeleton/skeleton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
-    ResultsComponent
+    ResultsComponent,
+    SkeletonComponent
   ],
   imports: [
     BrowserModule,

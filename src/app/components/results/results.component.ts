@@ -15,10 +15,10 @@ export class ResultsComponent implements OnChanges {
     private apiSongs: ApiCallService
   ) {}
 
-  ngOnChanges(changes: SimpleChanges): void {
-      if (changes['songDetails'] && changes['songDetails'].currentValue) {
-        this.displayLyrics();
-      }
+  ngOnChanges() {
+    if (this.songDetails) {
+      this.displayLyrics();
+    }
   }
 
   public displayLyrics() {

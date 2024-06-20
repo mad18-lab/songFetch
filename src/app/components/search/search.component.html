@@ -11,5 +11,11 @@
             rounded-lg p-2 sm:p-4 border-2 border-green-600 focus:outline-none" required />
         </form>
     </div>
-    <app-results [songDetails]="songDetails"></app-results>
+    <div *ngIf="loading">
+        <app-skeleton></app-skeleton>
+    </div>
+    <div *ngIf="errorMsg" class="bg-[#131313] rounded-lg mt-8 w-[300px] sm:w-[500px] md:w-[700px] lg:w-[960px] p-8 mx-auto text-white text-xl">
+        {{ errorMsg }}
+    </div>
+    <app-results [songDetails]="songDetails" *ngIf="!loading && !errorMsg"></app-results>
 </div>
